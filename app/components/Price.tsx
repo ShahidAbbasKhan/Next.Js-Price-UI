@@ -4,9 +4,10 @@ import React from 'react'
 
 export default function Price() {
   return (
-    <Box bg={"#FFFFFF"} borderRadius="10px" w="994px" mx="auto" mt="-190" >
-        <Flex>
-        <Box bg={"#F0EAFB"}  p="50px" textAlign={"center"} borderRadius="10px">
+    <Box bg={"#FFFFFF"} borderRadius="10px"  overflow={"hidden"} maxW="994px" ml={{base:"10px",md:"20px", lg:"auto"}} mr={{base:"10px", md:"20px", lg:"auto"}} mt="-160" boxShadow={
+        "0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);"}>
+        <Flex direction={{base:"column", md:"column", lg:"row"}}>
+        <Box bg={"#F0EAFB"}  p="50px" textAlign={"center"} >
             <Text fontWeight={"bold"} fontSize="24px">
                 Premium PRO
             </Text>
@@ -16,7 +17,7 @@ export default function Price() {
             <Text mb="15px" mt="6px">
                 billed just once
             </Text>
-            <Button color="white" bg="#805AD5" borderRadius={"6px"} w="270px">
+            <Button color="white" bg="#805AD5"  w="270px">
                 Get Started
             </Button>
 
